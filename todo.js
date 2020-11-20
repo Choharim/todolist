@@ -15,7 +15,7 @@ function deleteToDo(event){
   const cleanToDos = toDos.filter(function(element){
     return element.id !== parseInt(li.id);
   });
-  toDos = cleanToDos;
+  toDos = cleanToDos; //toDos을 let으로 한 이유
   saveToDos();
 }
 
