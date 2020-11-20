@@ -6,6 +6,7 @@ function paintImage(number){
   const image = new Image();
   body.appendChild(image);
   image.src = `${number}.JPG`;
+  image.classList.add("bgImage");
 }
 
 function genRadom(){
