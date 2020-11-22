@@ -5,12 +5,12 @@ const IMG_NUMBER = 3;
 function paintImage(number){
   const image = new Image();
   body.appendChild(image);
-  image.src = `${number}.JPG`;
+  image.src = `${number+1}.JPG`;
   image.classList.add("bgImage");
 }
 
 function genRadom(){
-  const number = Math.ceil(Math.random()*IMG_NUMBER);
+  const number = Math.floor(Math.random()*IMG_NUMBER);
   return number;
 }
 
